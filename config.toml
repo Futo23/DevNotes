@@ -2,14 +2,3 @@ baseURL = 'http://example.org/'
 languageCode = 'ja-jp'
 title = 'Dev Notes'
 theme = 'PaperMod'
-
-params:
-  env: production
-  title: 'Dev Notes'
-  description: '開発ログ'
-  author: Me
-  DateFormat: 'January 1, 2023'
-
-  socialIcons:
-    - name: twitter
-      url: 'https://twitter.com/Futo_Horio'
