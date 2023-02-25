@@ -1,0 +1,35 @@
+baseURL: 'http://example.org/'
+languageCode: 'ja-jp'
+title: 'Dev Notes'
+theme: 'PaperMod'
+
+label:
+  text: 'Home'
+
+params:
+    env: production
+    author: Me
+    homeInfoParams:
+        Title: Dev Notes
+        Content: 開発ノート
+
+    DateFormat: 'January 1, 2023'
+    socialIcons:
+        - name: 'github'
+          url: 'https://github.com/Futo23'
+        - name: 'twitter'
+          url: 'https://twitter.com/Futo_Horio'
+        - name: Rss
+          url:  'index.xml'
+
+    showShareButtons: false
+    showBreadCrumbs: false
+    showReadingTime: true
+    comments: true
+
+menu:
+  main:
+    - indetifier: Categories
+      name: Categories
+      url: /categories/
+      weight: 20
