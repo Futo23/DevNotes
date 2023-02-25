@@ -1,4 +1,4 @@
-baseURL: 'http://example.org/'
+baseURL: 'https://black-field-0119efb00.2.azurestaticapps.net/'
 languageCode: 'ja-jp'
 title: 'Dev Notes'
 theme: 'PaperMod'
@@ -10,8 +10,9 @@ params:
     env: production
     author: Me
     homeInfoParams:
-        Title: Dev Notes
-        Content: 開発ノート
+        Title: Dev Notes 
+        Content: >
+          開発ノート
 
     DateFormat: 'January 1, 2023'
     socialIcons:
@@ -19,6 +20,8 @@ params:
           url: 'https://github.com/Futo23'
         - name: 'twitter'
           url: 'https://twitter.com/Futo_Horio'
+        - name: 'qiita'
+          url: 'https://qiita.com/Futo_Horio'
         - name: Rss
           url:  'index.xml'
 
@@ -29,7 +32,6 @@ params:
 
 menu:
   main:
-    - indetifier: Categories
-      name: Categories
-      url: /categories/
-      weight: 20
+      - name: Tags
+        url: tags/
+        weight: 10
