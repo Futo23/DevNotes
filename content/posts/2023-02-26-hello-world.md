@@ -10,10 +10,11 @@ ShowToc: false
 ShowBreadCrumbs: true
 ---
 
-Azure Static Web App + Hugo (theme: papermode) を使って、  
-技術ブログを作成してみました。
+![](images/2023-02-26-20-47-57.png)
 
-ドメイン (```futo-horio.dev```) は、  
-Azure DNS で管理しています。
+Azure Static Web App + Hugo を使って、  
+静的Webサイト作成とホスティングを試してみました。
 
-個人ブログなので、自由に書いていきたいと思います。
+ドメイン (```futo-horio.dev```) は Azure DNS で管理しています。
+
+これから何か色々書いていきます。
