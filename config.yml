@@ -2,6 +2,7 @@ baseURL: 'https://black-field-0119efb00.2.azurestaticapps.net/'
 languageCode: 'ja-jp'
 title: 'Dev Notes'
 theme: 'PaperMod'
+googleAnalytics: 'G-FNBTZFKERP'
 
 label:
   text: 'Home'
@@ -16,13 +17,13 @@ params:
 
     DateFormat: 'January 1, 2023'
     socialIcons:
-        - name: 'github'
+        - name: 'GitHub'
           url: 'https://github.com/Futo23'
-        - name: 'twitter'
+        - name: 'Twitter'
           url: 'https://twitter.com/Futo_Horio'
-        - name: 'qiita'
-          url: 'https://qiita.com/Futo_Horio'
-        - name: Rss
+        - name: 'SpeakerDeck'
+          url: 'https://speakerdeck.com/futo23'
+        - name: RSS
           url:  'index.xml'
 
     showShareButtons: false

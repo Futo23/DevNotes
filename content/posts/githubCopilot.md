@@ -6,4 +6,5 @@ description: "GitHub Copilot 解説"
 tags: ["GitHub"]
 ShowToc: true
 ShowBreadCrumbs: true
+draft: true
 ---
