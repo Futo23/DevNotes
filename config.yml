@@ -26,7 +26,6 @@ params:
           url:  'index.xml'
 
     showShareButtons: false
-    showBreadCrumbs: false
     showReadingTime: true
     comments: true
 
