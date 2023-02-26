@@ -15,7 +15,6 @@ params:
         Content: >
           開発ノート
 
-    DateFormat: 'January 1, 2023'
     socialIcons:
         - name: 'GitHub'
           url: 'https://github.com/Futo23'

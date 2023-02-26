@@ -1,7 +1,7 @@
 ---
 author: "Futo Horio"
 title: "Hello, World!"
-date: "Febrary 26, 2023"
+date: "2023-02-26"
 description: "Azure Static Web App + Hugo でブログを作成しました"
 tags: ["Azure", "Hugo", "Static Web App"]
 ShowToc: false
