@@ -397,6 +397,6 @@ public class AzureSpatialAnchorsScript : MonoBehaviour
 }
 ```
 
-# 備考
-HoloLens 2 で動作検証を行ったところ、作成したアンカーの位置と検索したアンカーの位置がずれているので、追加の調査が必要です。
+# 注意点
+```AzureSpatialAnchorsScript``` をアタッチする GameObject が他の GameObject の子オブジェクトの場合、親オブジェクトの Transform によってアンカーの挙動が変わってしまうので注意が必要。具体的には、親オブジェクトの Transform を (0, 0, 1.2) に設定していたため、アンカー作成時には手元に表示されていたアンカーオブジェクトが検索時には、アプリ起動時の正面方向 1.2m 奥に表示されてしまっていた。
 
