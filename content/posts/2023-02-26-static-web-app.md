@@ -21,9 +21,7 @@ Azure DNS にネームサーバーを変更した後、
 Azure Static Web App の **[設定] > [カスタムドメイン]** から設定を追加しました。
 
 
-# 手順
-
-**[事前準備]** Hugo CLI をインストール
+# 事前準備
 
 - [Hugo](https://github.com/gohugoio/hugo/releases/tag/v0.110.0) をインストール & PATH 設定を行う
 
@@ -58,8 +56,8 @@ git commit -m "Initial commit"
 
 # GitHub に Push する
 
-Web ブラウザで GitHub を開き、 Public リポジトリを新規作成しておく。  
-※ README.md は作成しないこと。
+Web ブラウザで GitHub を開き、 Public リポジトリを新規作成する。  
+※ 作成時に README.md 生成のチェックは外す。
 
 GitHub リポジトリをリモートとしてローカルリポジトリに追加する
 

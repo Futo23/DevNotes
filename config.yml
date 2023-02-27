@@ -33,4 +33,4 @@ menu:
   main:
       - name: Tags
         url: tags/
-        weight: 10
+        weight: 50
