@@ -2,7 +2,7 @@
 author: "Futo Horio"
 title: "Azure Static Web App + Hugo で Web サイトを公開する"
 date: "2023-02-26"
-Description: "aaaa"
+Description: ""
 hideSummary: true
 ShowWordCount: false
 tags: ["Azure"]
@@ -54,10 +54,19 @@ git add -A
 git commit -m "Initial commit"
 ```
 
+ローカル環境で Hugo アプリを起動する
+
+```cli
+hugo server
+```
+
 # GitHub に Push する
 
-Web ブラウザで GitHub を開き、 Public リポジトリを新規作成する。  
-※ 作成時に README.md 生成のチェックは外す。
+Web ブラウザで [GitHub ページ](https://github.com/new) を開き、 Public リポジトリを新規作成する。 
+
+![](/images/2023-02-27-github.png)
+
+※ 「Add a README file」 のチェックは外しておく。
 
 GitHub リポジトリをリモートとしてローカルリポジトリに追加する
 
@@ -71,19 +80,32 @@ git remote add origin https://github.com/<アカウント名>/<リポジトリ�
 git push --set-upstream origin main
 ```
 
-| オプション | 説明 |
-| --- | --- |
-| --set-upstream | リモートリポジトリを追跡するように設定する |
-
 # Azure Static Web App にデプロイする
 
 - Azure Static Web App リソースを作成する
 
 ![](/images/2023-02-26-azurestaticwebapp-create.png)
 
+| プロパティ | 設定値 |
+| --- | --- |
+| **デプロイの詳細** | |
+| デプロイの種類 | GitHub |
+| GitHub アカウント | 自分のアカウント |
+| 組織 | 自分 |
+| リポジトリ | 先ほど作成したリポジトリ |
+| ブランチ | main |
+| **ビルドの詳細** | |
+| ビルドのプリセット | Hugo |
+| アプリの場所 | / (デフォルト) |
+| API の場所 | 指定なし |
+| 出力先 | public |
+
+
 リソースが作成されると、指定したブランチ (```main```) に  
 GitHub Actions (.github/workflows/xxxxx.yml) が追加され、  
 Azure Static Web App への自動デプロイが開始されます。
+
+
 
 # GitHub Actions 実行結果
 GitHub Actions の実行結果は GitHub ページの  
@@ -141,7 +163,13 @@ jobs:
           action: "close"
 ```
 
+GitHub Actions でビルドデプロイが成功すると、
+Azure Static Web App で作成した静的 Web サイトを確認することができます。
+
+![Azure Static Web App](/images/2023-02-26-cover.png)
+
 # カスタムドメインの設定
+この手順はカスタムドメインを設定するための手順です。
 
 1. 独自ドメインを取得する
 2. Azure DNS ゾーンを作成する ( Azure Portal )
@@ -152,3 +180,5 @@ jobs:
 6. カスタムドメインが追加されるまで待つ (10分程度)
 
 # Refs
+
+- [Hugo サイトを Azure Static Web Apps に発行する](https://learn.microsoft.com/ja-jp/azure/static-web-apps/publish-hugo)
