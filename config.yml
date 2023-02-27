@@ -2,7 +2,7 @@ baseURL: 'https://futo-horio.dev'
 languageCode: 'ja-jp'
 title: 'Dev Notes'
 theme: 'PaperMod'
-googleAnalytics: 'G-FNBTZFKERP'
+googleAnalytics: 'G-W55SVLNCPV'
 
 label:
   text: 'Home'
