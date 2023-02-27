@@ -1,15 +1,13 @@
 ---
 author: "Futo Horio"
 title: "Azure Spatial Anchors 公式チュートリアル検証 & 解説"
-date: "2023-02-26"
+date: "2023-02-27"
 Description: ""
 hideSummary: true
 ShowWordCount: false
 tags: ["Azure"]
 ShowToc: true
 ShowBreadCrumbs: true
-# cover:
-#   image: /images/2023-02-26-cover.png
 draft: false
 ---
 
