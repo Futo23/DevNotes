@@ -8,8 +8,11 @@ ShowWordCount: false
 tags: ["Azure"]
 ShowToc: true
 ShowBreadCrumbs: true
+cover:
+    image: /images/2023-02-27-azure-spatial-anchors.png
 draft: false
 ---
+![](images/2023-02-27-22-01-20.png)
 
 基本的な手順は、以下公式ドキュメントを参照。
 
