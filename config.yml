@@ -13,7 +13,7 @@ params:
     homeInfoParams:
         Title: Dev Notes 
         Content: >
-          [Azure](https://futo-horio.dev/tags/azure/) / Mixed Reality / GitHub etc..
+          [Azure](https://futo-horio.dev/tags/azure/) / [Mixed Reality](https://futo-horio.dev/tags/mixedreality/) / GitHub etc..
 
     socialIcons:
         - name: 'GitHub'
