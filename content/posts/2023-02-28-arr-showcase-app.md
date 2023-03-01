@@ -1,7 +1,7 @@
 ---
 author: "Futo Horio"
 title: "Azure Remote Rendering Showcase App で コンパイルエラー: Exception: IL2CPP error for method 'System.Void POpusCodec.OpusDecoderAsync が発生した際の回避策"
-date: "2023-02-28"
+date: "2023-03-01"
 Description: ""
 hideSummary: true
 ShowWordCount: false
