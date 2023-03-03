@@ -43,7 +43,7 @@ Azure Remote Rendering では、以下8種類の API が提供されています
 Azure Remote Rendering セッション作成時に生成される UUID を使って、  
 Get Session API を呼び出すことで、終了済みのセッションの経過時間 や VM サイズを取得することができます。
 
-# 試すこと
+# 手順
 
 1. テスト用のセッションを作成する
 2. セッションID (UUID) を元に Get Session API を呼び出す
@@ -108,6 +108,19 @@ Get Session API を呼び出すことで、終了済みのセッションの経�
     "teraflops": 8.1
 }
 ```
+
+| 名前 | 型 | 説明 |
+| --- | --- | --- |
+| id | string | セッションID (UUID) |
+| createTime | string | セッション作成日時 |
+| arrInspectorPort | int | Azure Remote Rendering Inspector ツール のポート番号 |
+| elapsedTimeMinutes | int | セッションの経過時間 (分) |
+| hostname | string | セッションのホスト名 |
+| maxLeaseTimeMinutes | int | セッションの最大実行時間 (分) |
+| size | string | セッションの VM サイズ |
+| status | string | セッションの状態 |
+| teraflops | double | レンダリングセッション GPU の計算能力 |
+
 
 **3. セッションを停止する**
 
